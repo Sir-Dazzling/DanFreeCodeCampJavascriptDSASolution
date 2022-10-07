@@ -15,12 +15,10 @@ function findLongestWordLength(str) {
 
 // Using reduce
 function findLongestWordLength(s) {
-  return s.split(" ").reduce(function (longest, word) {
-    return Math.max(longest, word.length);
-  }, 0);
+  return s.split(" ").reduce((prev, current) => Math.max(prev, current.length), 0);
 }
 
 // Using map
-function findLongestWordLength(str) {
-  return Math.max(...str.split(" ").map((word) => word.length));
+function findLongestWordLength(s) {
+  return Math.max(...s.split(" ").map((word) => word.length));
 }
