@@ -5,7 +5,7 @@ function largestOfFour(arr) {
   return arr.map((arr2) => arr2.reduce((prev, current) => Math.max(prev, current)));
 }
 
-// // Using straight forward push and Math.max
+// // Using Math.max with array
 function largestOfFour(arr) {
   return arr.map((innerArr) => Math.max(...innerArr));
 }
