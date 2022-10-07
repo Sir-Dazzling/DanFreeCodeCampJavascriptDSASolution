@@ -1,6 +1,6 @@
-// FInd the longest word in the provided sentence
+// Find the longest word in a provided sentence
 
-// Solution one
+// Using For loop
 function findLongestWordLength(str) {
   let strArr = str.split(" ");
   let maxLength = 0;
